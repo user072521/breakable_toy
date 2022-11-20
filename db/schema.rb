@@ -20,6 +20,8 @@ ActiveRecord::Schema.define(version: 2022_11_14_185741) do
     t.string "website", null: false
     t.string "city", null: false
     t.string "state", null: false
+    t.decimal "latitude", null: false
+    t.decimal "longitude", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
