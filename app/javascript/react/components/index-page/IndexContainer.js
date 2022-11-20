@@ -1,25 +1,17 @@
 import React, { useEffect, useState } from "react"
 import ResortsList from "./ResortsList"
+import FetchResorts from "../services/FetchResorts"
 
 const IndexContainer = (props) => {
 
   const [resorts, setResorts] = useState({})
 
   const getResorts = async () => {
-    try {
-      const response = await fetch("/api/v1/resorts")
-      if (!response.ok) {
-        const errorMessage = `${response.status} (${response.statusText})`
-        throw new Error(errorMessage)
-      }
-      const resortData = await response.json()
-      setResorts({
-        ...resorts,
-        resortData
-      })
-    } catch (error) {
-      console.error(`Error in Fetch: ${error.message}`)
-    }
+    const resortData = await FetchResorts.getResorts()
+    setResorts({
+      ...resorts,
+      resortData
+    })
   }
 
   useEffect(() => {

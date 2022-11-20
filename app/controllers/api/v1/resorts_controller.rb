@@ -15,5 +15,9 @@ class Api::V1::ResortsController < ApiController
     
     render json: ( resort_hash )
   end
+  
+  def show
+    render json: ( Resort.find(params["id"]) )
+  end
 
 end
