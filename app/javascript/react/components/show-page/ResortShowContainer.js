@@ -35,8 +35,7 @@ const ResortShowContainer = (props) => {
   }
 
   return(
-    <div>
-      <h1>hello {props.match.params.id}</h1>
+    <div className="grid-x">
       <Map resort={specificResort} />
       <WeatherContainer weather={weather} />
     </div>

@@ -20,7 +20,7 @@ const Map = (props) => {
 
   if (props.resort.name) {
     return (
-      <div className="map" style={{width: '25em', height: '25em'}}>
+      <div className="map small-6" style={{width: '25em', height: '25em'}}>
         <GoogleMapReact
           bootstrapURLKeys={{ key: 'AIzaSyAK_bFqGHyVGSNd9-gRog6sitsU616BL8c' }}
           defaultCenter={location.center}
