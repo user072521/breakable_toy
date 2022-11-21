@@ -3,6 +3,7 @@ databases:
     ipAllowList: []
     plan: free
 
+
 services:
   - type: web
     name: mountaindex
@@ -16,4 +17,4 @@ services:
       - key: DATABASE_URL
         fromDatabase:
           name: postgres
-          property: connectionString
+          property:  connectionString
