@@ -15,7 +15,7 @@ class Api::V1::WeatherController < ApiController
       if hour.include?("T12:00")
         index = forecasted_time.index(hour)
         weather = forecasted_weather[index]
-        fahrenheit_conversion = ((weather * (9/5)) + 32)
+        fahrenheit_conversion = ((weather * (9.0/5)) + 32)
         unit = {"#{hour}": fahrenheit_conversion}
         daily_forecasts << unit
       end
