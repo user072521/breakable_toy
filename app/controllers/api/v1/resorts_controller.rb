@@ -1,5 +1,4 @@
 class Api::V1::ResortsController < ApiController
-  protect_from_forgery unless: -> { request.format.json? }
 
   def index
     resorts = Resort.all.sort_by { |resort| [resort.state, resort.city ] } 
