@@ -26,3 +26,8 @@ Resort.create(
   state: 'ME',
   latitude: 44.473422,
   longitude: -70.8590667)
+
+test_user = User.create(email:'testpass@example.com', password: 'password')
+
+test_user.resorts << Resort.find(1)
+test_user.resorts << Resort.find(3)

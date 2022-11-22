@@ -1,6 +1,4 @@
 class Api::V1::WeatherController < ApiController
-  protect_from_forgery unless: -> { request.format.json? }
-
   require 'rest-client'
 
   def get_weather
