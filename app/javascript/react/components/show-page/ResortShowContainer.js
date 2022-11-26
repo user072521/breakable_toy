@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react"
 import FetchResorts from "../services/FetchResorts";
+import FavoriteButton from "./FavoriteButton";
 import Map from "./Map";
 import WeatherContainer from "./WeatherContainer";
 
 const ResortShowContainer = (props) => {
 
-  const [resort, setResort] = useState({})
+  const [resort, setResort] = useState({
+    users: []
+  })
   const [weather, setWeather] = useState([])
 
   const getSpecificResort = async () => {
@@ -14,7 +17,7 @@ const ResortShowContainer = (props) => {
       ...resort,
       resortData
     })
-    const weatherData = await FetchResorts.getSpecificWeather(resortData.latitude, resortData.longitude)
+    const weatherData = await FetchResorts.getSpecificWeather(resortData.resort.latitude, resortData.resort.longitude)
     setWeather([
       ...weather,
       weatherData
@@ -26,18 +29,23 @@ const ResortShowContainer = (props) => {
   }, [])
   
   let specificResort = {}
+  let favorite = 0
   if (resort.resortData) {
+    favorite = resort.resortData.favorite
     specificResort = {
-      name: resort.resortData.name,
-      latitude: resort.resortData.latitude,
-      longitude: resort.resortData.longitude
+      name: resort.resortData.resort.name,
+      latitude: resort.resortData.resort.latitude,
+      longitude: resort.resortData.resort.longitude
     }
   }
 
   return(
-    <div className="grid-x">
-      <Map resort={specificResort} />
-      <WeatherContainer weather={weather} />
+    <div>
+      <div className="grid-x">
+        <Map resort={specificResort} />
+        <WeatherContainer weather={weather} />
+      </div>
+      <FavoriteButton favorite={favorite} id={props.match.params.id}/>
     </div>
   )
 

@@ -10,10 +10,10 @@ const WeatherTile = (props) => {
     <div className="cell callout">
       <center>
         <div className="callout">
-          <h8>{date.toLocaleDateString('en-us', { month:"numeric", day:"numeric" })}</h8>
-          <h6><strong>{date.toLocaleDateString('en-us', { weekday:"short" })}</strong></h6>
+          <p>{date.toLocaleDateString('en-us', { month:"numeric", day:"numeric" })}</p>
+          <p><strong>{date.toLocaleDateString('en-us', { weekday:"short" })}</strong></p>
         </div>
-        <h5>{weather}<sup>°F</sup></h5>
+        <p>{weather}<sup>°F</sup></p>
       </center>
     </div>
   )

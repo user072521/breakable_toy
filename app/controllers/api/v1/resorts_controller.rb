@@ -16,7 +16,21 @@ class Api::V1::ResortsController < ApiController
   end
   
   def show
-    render json: ( Resort.find(params["id"]) )
+    resort = Resort.find(params["id"])
+    
+    favorite = 0
+    if (current_user != nil)
+      if resort.users.include?(current_user)
+        favorite = 2
+      else
+        favorite = 1
+      end
+    end
+
+    render json: { 
+      resort: Resort.find(params["id"]),
+      favorite: favorite
+    }
   end
 
 end
