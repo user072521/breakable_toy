@@ -1,0 +1,46 @@
+
+.top-bar * {
+  font-family: american typewriter, serif;
+}
+
+.top-bar h1 {
+  font-weight: 900
+}
+
+.top-bar .right {
+  text-align: right;
+  list-style-type: none;
+}
+
+.landing-poem {
+  font-family: baskerville, serif;
+  text-align: center;
+}
+
+.landing-poem p {
+  margin: 1em 0em;
+}
+
+#anchor-container {
+  display: block;
+  margin: 3em 0em 3em;
+}
+
+.landing-poem img {
+  width: 30em;  
+  height: auto;  
+  border: thick outset #E4B070;
+}
+
+.landing-poem .button {
+  background-color: #008CBA;
+  color: white;
+  padding: 15px 32px;
+}
+
+/* #E4B070 - orange sky
+#8c747a - darker sky
+#C7D1CE - snow
+#253726 - tree
+#d28b71 - lake reflection of sky
+#595A67 - grey from mountain */

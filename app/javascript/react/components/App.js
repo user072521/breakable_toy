@@ -10,9 +10,6 @@ export const App = (props) => {
     <BrowserRouter>
       <Switch>
         <Route exact path="/profile-page" component={ProfileContainer} />
-        <Route exact path="/">
-          <Redirect to="resorts" />
-        </Route>
         <Route exact path="/resorts" component={IndexContainer} />
         <Route exact path="/resorts/:id" component={ResortShowContainer} />
       </Switch>
