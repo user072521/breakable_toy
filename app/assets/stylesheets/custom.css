@@ -1,3 +1,7 @@
+#app {
+  margin: 1em;
+}
+
 
 .top-bar * {
   font-family: american typewriter, serif;
@@ -21,6 +25,10 @@
   margin: 1em 0em;
 }
 
+.landing-poem img {
+  margin: 0em 0em 5em;
+}
+
 #anchor-container {
   display: block;
   margin: 3em 0em 3em;
@@ -36,6 +44,28 @@
   background-color: #008CBA;
   color: white;
   padding: 15px 32px;
+}
+
+.state-list {
+  font-family: american typewriter, serif;
+  list-style-type: none;
+}
+
+.state-list h5 {
+  font-family: american typewriter, serif;
+  font-weight: 600;
+  width: 100%;
+}
+
+.state-list .button {
+  text-align: center;
+  color: white;
+}
+
+.state-list .button:hover {
+  transition: 0.3s;
+  color: red;
+  background-color: white;
 }
 
 /* #E4B070 - orange sky
