@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BreakableToy</title>
+  <title>Where's my hill?</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <%= stylesheet_link_tag 'application', media: 'all' %>
   <%= csrf_meta_tags %>
@@ -9,12 +9,12 @@
 <body>
   
   <nav class="top-bar">
-    <h1><a href="/resorts">Mountaindex</a></h1>
+    <h1><a href="/resorts">Where's my hill?</a></h1>
 
     <section class="top-bar-section">
       <ul class="right">
         <%- if current_user -%>
-          <h5><%= link_to 'My Profile Page', "/profile-page" %></h5>
+          <li><strong><%= link_to 'My Profile Page', "/profile-page" %></strong></li>
           <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
         <%- else -%>
           <li><%= link_to 'Sign Up', new_user_registration_path %></li>
