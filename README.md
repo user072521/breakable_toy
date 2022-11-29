@@ -2,9 +2,9 @@
 
 As a snowboarder or skiier, you tell your friends to "meet you on the hill!". But what hill do we choose? **Where's my hill?**
 
-This is an application to help a user determine their choice of mountain resort. Here is the deployed website.
+This is an application to help a user determine their choice of mountain resort. [Here is the deployed website](https://mountaindex.onrender.com/).
 
-![This is an image](app/assets/images/Screen Shot 2022-11-28 at 10.09.10 PM.png)
+![This is an image](app/assets/images/1485005.jpg)
 ![This is an image](app/assets/images/Screen Shot 2022-11-28 at 10.09.30 PM.png)
 ![This is an image](app/assets/images/Screen Shot 2022-11-28 at 10.09.46 PM.png)
 
