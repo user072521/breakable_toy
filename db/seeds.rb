@@ -1,7 +1,7 @@
 Resort.delete_all
 User.delete_all
 
-Resort.create(
+blue_hills = Resort.create(
   name: 'Blue Hills Ski Area', 
   website: 'https://www.bluehillsboston.com/', 
   city: 'Canton', 
@@ -15,7 +15,7 @@ Resort.create(
   state: 'MA',
   latitude: 42.5108592,
   longitude: -71.8883425)
-Resort.create(
+sugarloaf = Resort.create(
   name: 'Sugarloaf', 
   website: 'https://www.sugarloaf.com/', 
   city: 'Carrabassett Valley', 
@@ -32,5 +32,5 @@ Resort.create(
 
 test_user = User.create(email:'testpass@example.com', password: 'password')
 
-test_user.resorts << Resort.find(1)
-test_user.resorts << Resort.find(3)
+test_user.resorts << Resort.find(blue_hills)
+test_user.resorts << Resort.find(sugarloaf)
