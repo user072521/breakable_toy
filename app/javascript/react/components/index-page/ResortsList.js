@@ -12,7 +12,7 @@ const ResortsList = (props) => {
 
     return (
       <Link to={`/resorts/${resort.id}`} key={resort.id} className="cell small-4 button" onMouseOver={onHover} >
-        <h5 className="mountain" >{resort.name}</h5>
+        <h5>{resort.name}</h5>
         <p>{resort.city}, {resort.state}</p>
       </Link>
     )

@@ -6,9 +6,7 @@ import WeatherContainer from "./WeatherContainer";
 
 const ResortShowContainer = (props) => {
 
-  const [resort, setResort] = useState({
-    users: []
-  })
+  const [resort, setResort] = useState({})
   const [weather, setWeather] = useState([])
 
   const getSpecificResort = async () => {
@@ -30,22 +28,40 @@ const ResortShowContainer = (props) => {
   
   let specificResort = {}
   let favorite = 0
+  let information = ""
   if (resort.resortData) {
+
     favorite = resort.resortData.favorite
+    
     specificResort = {
       name: resort.resortData.resort.name,
       latitude: resort.resortData.resort.latitude,
       longitude: resort.resortData.resort.longitude
     }
-  }
 
-  return(
-    <div>
-      <div className="grid-x">
-        <Map resort={specificResort} />
-        <WeatherContainer weather={weather} />
+    // debugger
+
+    information = (
+      <div className="resort-information cell small-6">
+        <h5>{resort.resortData.resort.name}</h5>
+        <p>{resort.resortData.resort.city}, {resort.resortData.resort.state}</p>
+        <a href={resort.resortData.resort.website}>{resort.resortData.resort.website}</a>
       </div>
-      <FavoriteButton favorite={favorite} id={props.match.params.id}/>
+    )
+  }
+  
+  return(
+    <div className="resort-show-page">
+      <div className="favorite-button">
+        <FavoriteButton favorite={favorite} id={props.match.params.id}/>
+      </div>
+      <div className="grid-x grid-margin-x">
+        <div className="cell small-6">
+          <Map resort={specificResort} />
+        </div>
+        {information}
+      </div>
+      <WeatherContainer weather={weather} />
     </div>
   )
 
