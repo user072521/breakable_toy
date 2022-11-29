@@ -1,3 +1,6 @@
+Resort.delete_all
+User.delete_all
+
 Resort.create(
   name: 'Blue Hills Ski Area', 
   website: 'https://www.bluehillsboston.com/', 

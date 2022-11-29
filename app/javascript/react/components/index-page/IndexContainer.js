@@ -51,7 +51,7 @@ const IndexContainer = (props) => {
       <div className="cell small-8">
         {resortStates}
       </div>
-      <div className="cell small-4">
+      <div className="cell small-4 index-map">
         <Map resort={hoveredResort}/>
       </div>
     </div>

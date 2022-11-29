@@ -4,6 +4,17 @@
 
 .top-bar * {
   font-family: american typewriter, serif;
+  color: white;
+}
+
+.top-bar {
+  background: rgb(199,209,206);
+  background: linear-gradient(90deg, rgba(140,116,122,1) 0%, rgba(228,176,112,1) 55%,rgba(199,209,206,1) 100%);
+}
+
+.top-bar ul {
+  background-color: transparent;
+  margin: 0em 1em;
 }
 
 .top-bar h1 {
@@ -14,7 +25,6 @@
 .top-bar .right {
   text-align: right;
   list-style-type: none;
-  background-color: none;
 }
 
 .landing-poem {
@@ -43,10 +53,14 @@
 }
 
 .landing-poem .button {
-  background-color: #008CBA;
+  background-color: #8c747a;
   color: white;
   padding: 15px 32px;
   font-weight: 600;
+}
+
+.landing-poem .button:hover {
+  box-shadow: inset 0em 0em 0em 10em rgba(0, 0, 0, 0.1);
 }
 
 .state-list {
@@ -61,14 +75,20 @@
 }
 
 .state-list .button {
+  background-color: #8c747a;
   text-align: center;
   color: white;
 }
 
 .state-list .button:hover {
   transition: 0.3s;
-  color: red;
+  color: #e4b071;
   background-color: white;
+}
+
+.index-map {
+  position: sticky;
+  top: 1em;
 }
 
 .resort-show-page {
@@ -92,9 +112,13 @@
 .favorite-button .button {
   font-family: baskerville, serif;
   font-weight: 600;
-  background-color: #008CBA;
+  background-color: #8c747a;
   color: white;
   padding: 15px 32px;
+}
+
+.favorite-button .button:hover {
+  box-shadow: inset 0em 0em 0em 10em rgba(0, 0, 0, 0.1);
 }
 
 .weather-container {
@@ -115,8 +139,8 @@
 }
 
 .weather-container .weather-tile .date {
-  background-color: #008CBA;
-  color: white;
+  background-color: #cacdc6;
+  color: black;
 }
 
 .custom-form {
@@ -141,7 +165,7 @@
 .custom-form input[type=submit] {
   font-family: baskerville, serif;
   font-weight: 600;
-  background-color: #008CBA;
+  background-color: #8c747a;
   color: white;
   padding: 15px 32px;
   border: none;
@@ -172,10 +196,6 @@
   font-weight: 600;
   width: 100%;
   font-size: 1.2em;
-}
-
-.profile .resorts {
-
 }
 
 
