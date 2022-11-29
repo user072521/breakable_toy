@@ -10,7 +10,7 @@ This is an application to help a user determine their choice of mountain resort.
 
 ## Usage Instructions
 
-An index page shows a list of resorts in New England, and by clicking on a resorts tile a user will be sent to the resorts show page which has details about the resort. A user can also create an account to create a list of their favorite mountains for quick reference which will be shown on a users profile page. On the show page for each of the resorts there will be a button letting a user favorite or unfavorite a particular mountain.
+An index page shows a list of resorts in New England. Each tile navigates to a resorts show page. A user can sign in and save their favorite resorts on each resorts show page. Their profile page will show their favorites.
 
 ## TODO
 
