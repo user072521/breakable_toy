@@ -1,7 +1,8 @@
-# README
+# Where's My Hill?
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an application to help a user determine their choice of mountain resort. An index page shows a list of resorts in New England, and by clicking on a resorts tile a user can view the resorts show page which has details about the resort. A user can also create an account to create a list of their favorite mountains for quick reference.
+
+![This is an image](app/assets/images/1485005.jpg)
 
 Things you may want to cover:
 
