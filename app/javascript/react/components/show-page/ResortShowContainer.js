@@ -39,8 +39,6 @@ const ResortShowContainer = (props) => {
       longitude: resort.resortData.resort.longitude
     }
 
-    // debugger
-
     information = (
       <div className="resort-information cell small-6">
         <h5>{resort.resortData.resort.name}</h5>

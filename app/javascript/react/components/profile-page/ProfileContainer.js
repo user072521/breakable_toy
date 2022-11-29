@@ -22,7 +22,7 @@ const ProfileContainer = () => {
   let resorts = ""
   if (user.userData) {
     userInfo = (
-      <p>Email: {user.userData.user.email}</p>
+      <h5>Email: {user.userData.user.email}</h5>
     )
     resorts = user.userData.user.resorts.map((resort) => {
       return (
@@ -34,9 +34,14 @@ const ProfileContainer = () => {
   }
 
   return (
-    <div>
+    <div className="profile">
       {userInfo}
-      {resorts}
+      <div className="resorts callout">
+        <h5>
+          Resort List
+        </h5>
+        {resorts}
+      </div>
     </div>
   )
 
