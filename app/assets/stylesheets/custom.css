@@ -14,6 +14,7 @@
 .top-bar .right {
   text-align: right;
   list-style-type: none;
+  background-color: none;
 }
 
 .landing-poem {
@@ -45,6 +46,7 @@
   background-color: #008CBA;
   color: white;
   padding: 15px 32px;
+  font-weight: 600;
 }
 
 .state-list {
@@ -89,7 +91,7 @@
 
 .favorite-button .button {
   font-family: baskerville, serif;
-  font-weight: 900;
+  font-weight: 600;
   background-color: #008CBA;
   color: white;
   padding: 15px 32px;
@@ -117,8 +119,64 @@
   color: white;
 }
 
+.custom-form {
+  width: 40em;
+  margin: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: baskerville, serif;
+}
 
+.custom-form h5 {
+  font-family: american typewriter, serif;
+  font-weight: 600;
+  width: 100%;
+  font-size: 2em;
+}
 
+.custom-form label {
+  font-size: 1.2em;
+}
+
+.custom-form input[type=submit] {
+  font-family: baskerville, serif;
+  font-weight: 600;
+  background-color: #008CBA;
+  color: white;
+  padding: 15px 32px;
+  border: none;
+}
+
+.custom-form input[type=submit]:hover {
+  box-shadow: inset 0em 0em 0em 10em rgba(0, 0, 0, 0.3);
+}
+
+.flash {
+  color: black;
+  font-family: baskerville, serif;
+  font-weight: 900;
+  text-align: center;
+  width: 12em;
+  margin: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #E4B070;
+}
+
+.profile {
+  list-style-type: none;
+}
+
+.profile h5 {
+  font-family: american typewriter, serif;
+  font-weight: 600;
+  width: 100%;
+  font-size: 1.2em;
+}
+
+.profile .resorts {
+
+}
 
 
 /* #E4B070 - orange sky
