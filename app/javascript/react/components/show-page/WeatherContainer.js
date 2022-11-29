@@ -17,9 +17,9 @@ const WeatherContainer = (props) => {
   })
 
   return (
-    <div className="small-6 grid-x row grid-padding-x align-center">
+    <div className="small-6 grid-x row grid-padding-x align-center weather-container">
       <center className="small-12">
-        <h3>Weather Forecast</h3>
+        <h5>Weather Forecast</h5>
       </center>
       {forecast}
     </div>

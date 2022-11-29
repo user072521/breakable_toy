@@ -21,7 +21,7 @@ const Map = (props) => {
   }
 
   return (
-    <div className="map small-6" style={{width: '30em', height: '35em', border: 'thick outset #E4B070'}}>
+    <div className="map small-6" style={{width: '25em', height: '30em', border: 'thick outset #E4B070'}}>
       <GoogleMapReact
         bootstrapURLKeys={{ key: 'AIzaSyAK_bFqGHyVGSNd9-gRog6sitsU616BL8c' }}
         center={location.center}

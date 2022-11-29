@@ -2,13 +2,13 @@
   margin: 1em;
 }
 
-
 .top-bar * {
   font-family: american typewriter, serif;
 }
 
 .top-bar h1 {
-  font-weight: 900
+  font-weight: 900;
+  font-size: 2.5em;
 }
 
 .top-bar .right {
@@ -23,6 +23,7 @@
 
 .landing-poem p {
   margin: 1em 0em;
+  font-size: 1.1em;
 }
 
 .landing-poem img {
@@ -67,6 +68,58 @@
   color: red;
   background-color: white;
 }
+
+.resort-show-page {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50em;
+}
+
+.resort-show-page .resort-information h5 {
+  font-family: american typewriter, serif;
+  font-weight: 600;
+  width: 100%;
+  font-size: 2em;
+}
+
+.resort-show-page .resort-information p, a {
+  font-family: baskerville, serif;
+  font-size: 1.5em;
+}
+
+.favorite-button .button {
+  font-family: baskerville, serif;
+  font-weight: 900;
+  background-color: #008CBA;
+  color: white;
+  padding: 15px 32px;
+}
+
+.weather-container {
+  border: thick inset #8c747a;
+  margin: 1em 0em;
+  max-width: 100%;
+}
+
+.weather-container h5 {
+  font-family: american typewriter, serif;
+  font-weight: 600;
+  width: 100%;
+  font-size: 1.5em;
+}
+
+.weather-container .weather-tile {
+  font-family: baskerville, serif;
+}
+
+.weather-container .weather-tile .date {
+  background-color: #008CBA;
+  color: white;
+}
+
+
+
+
 
 /* #E4B070 - orange sky
 #8c747a - darker sky

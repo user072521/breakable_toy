@@ -7,9 +7,9 @@ const WeatherTile = (props) => {
   const weather = Math.round(props.weather[key])
 
   return (
-    <div className="cell callout">
+    <div className="cell callout weather-tile">
       <center>
-        <div className="callout">
+        <div className="callout date">
           <p>{date.toLocaleDateString('en-us', { month:"numeric", day:"numeric" })}</p>
           <p><strong>{date.toLocaleDateString('en-us', { weekday:"short" })}</strong></p>
         </div>
