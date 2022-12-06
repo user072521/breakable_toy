@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import FetchUsers from "../services/FetchUsers";
+import Map from "./Map";
 
 const ProfileContainer = () => {
 
@@ -19,15 +20,17 @@ const ProfileContainer = () => {
   }, [])
 
   let userInfo = ""
-  let resorts = ""
+  let resortLinks = ""
+  let resortList = ""
   if (user.userData) {
     userInfo = (
       <h5>Email: {user.userData.user.email}</h5>
     )
-    resorts = user.userData.user.resorts.map((resort) => {
+    resortList = user.userData.user.resorts
+    resortLinks = resortList.map((resort) => {
       return (
         <li key={resort.id}>
-          {<Link to={`/resorts/${resort.id}`} >{resort.name}</Link>}
+          {<Link to={`/resort/${resort.id}`} >{resort.name}</Link>}
         </li>
       )
     })
@@ -36,11 +39,12 @@ const ProfileContainer = () => {
   return (
     <div className="profile">
       {userInfo}
+      <Map resorts={resortList} />
       <div className="resorts callout">
         <h5>
           Resort List
         </h5>
-        {resorts}
+        {resortLinks}
       </div>
     </div>
   )
