@@ -1,4 +1,5 @@
 class Api::V1::UsersController < ApiController
+  before_action :authenticate_user!
 
   def index
     render json: current_user
@@ -15,4 +16,5 @@ class Api::V1::UsersController < ApiController
       render json: { favorite: 1 }
     end
   end
+
 end

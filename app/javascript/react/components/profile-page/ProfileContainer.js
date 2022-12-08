@@ -38,7 +38,7 @@ const ProfileContainer = () => {
 
         return (
           <li key={resort.id}>
-            <Link to={`/resort/${resort.id}`} onMouseOver={onHover} >{resort.name}</Link>
+            <Link to={`/resorts/${resort.id}`} onMouseOver={onHover} >{resort.name}</Link>
           </li>
         )
     })

@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   get "/resorts", to: "homes#index" 
   get "/resorts/:id", to: "homes#index"
-  get "/profile-page", to: "homes#index"
+  get "/profile-page", to: "homes#authenticated"
 
   get "/api/v1/weather", to: "api/v1/weather#get_weather"
 
