@@ -5,9 +5,8 @@ const ResortsList = (props) => {
 
   const resortList = props.resortData.map((resort) => {
 
-    const hoveredResort = resort
     const onHover = () => {
-      props.setHoveredResort({...hoveredResort})
+      props.setHoveredResort({...resort})
     }
 
     return (
