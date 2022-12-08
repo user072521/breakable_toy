@@ -32,5 +32,5 @@ Resort.create(
 
 test_user = User.create(email:'testpass@example.com', password: 'password')
 
-test_user.resorts << Resort.find(blue_hills)
-test_user.resorts << Resort.find(sugarloaf)
+test_user.resorts << blue_hills
+test_user.resorts << sugarloaf
