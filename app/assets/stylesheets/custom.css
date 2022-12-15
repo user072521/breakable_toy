@@ -228,6 +228,31 @@ footer i:hover {
   color: #d28b71;
 }
 
+.required label:before {
+  color: #e32;
+  content: '* ';
+  display:inline;
+}
+
+#error_explanation {
+  border: solid black;
+  background: beige;
+  margin: 1em 0em;
+}
+
+#error_explanation li {
+  margin: 0em 1.3em;
+}
+
+#error_explanation h5 {
+  font-size: 1.6em;
+  margin: 0.2em 1em;
+}
+
+#error_explanation .field_required {
+  margin: 5em;
+}
+
 
 /* #E4B070 - orange sky
 #8c747a - darker sky
