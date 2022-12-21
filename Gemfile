@@ -56,3 +56,4 @@ gem 'webpacker', '~> 3.3'
 gem "rest-client"
 gem "active_model_serializers"
 gem "font-awesome-sass", "~> 6.2.1"
+gem "carrierwave"

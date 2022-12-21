@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import FetchUsers from "../services/FetchUsers";
 import Map from "./Map";
+import AddPhoto from "./AddPhoto";
 
 const ProfileContainer = () => {
 
@@ -56,6 +57,7 @@ const ProfileContainer = () => {
           {resortLinks}
         </div>
       </div>
+      <AddPhoto />
     </div>
   )
 
