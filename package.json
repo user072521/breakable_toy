@@ -15,10 +15,12 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@rails/webpacker": "3.5",
     "babel-loader": "^8.0.6",
+    "dropzone": "^6.0.0-beta.2",
     "google-map-react": "^2.2.0",
     "prop-types": "~15.6.0",
     "react": "~16.8.0",
     "react-dom": "~16.8.0",
+    "react-dropzone": "^14.2.3",
     "react-router-dom": "5.0.0",
     "redbox-react": "1.6.0"
   },
