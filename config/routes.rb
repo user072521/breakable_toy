@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get "/profile-page", to: "homes#authenticated"
 
   get "/api/v1/weather", to: "api/v1/weather#get_weather"
+  get "/api/v1/spreadsheet", to: "api/v1/weather#get_spreadsheet"
   post "/api/v1/picture", to: "api/v1/users#set_photo"
 
   namespace :api do
