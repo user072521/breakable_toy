@@ -41,6 +41,20 @@ class FetchResorts {
       console.error(`Error in Fetch: ${error.message}`)
     }
   }
+  
+  static async getSpreadsheet() {
+    try {
+      const response = await fetch('/api/v1/spreadsheet')
+      if (!response.ok) {
+        const errorMessage = `${response.status} (${response.statusText})`
+        throw new Error(errorMessage)
+      }
+      const resortData = await response.json()
+      return resortData
+    } catch (error) {
+      console.error(`Error in Fetch: ${error.message}`)
+    }
+  }
 
 }
 

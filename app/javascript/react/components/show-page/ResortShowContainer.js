@@ -20,6 +20,7 @@ const ResortShowContainer = (props) => {
       ...weather,
       weatherData
     ])
+    const spreadsheetResponse = await FetchResorts.getSpreadsheet()
   }
   
   useEffect(() => {
