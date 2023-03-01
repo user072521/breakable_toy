@@ -21,8 +21,5 @@ class Api::V1::WeatherController < ApiController
 
     render json: daily_forecasts
   end
-  
-  def get_spreadsheet
-  end
 
 end
